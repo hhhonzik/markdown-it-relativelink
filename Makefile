@@ -7,7 +7,7 @@ REMOTE_NAME ?= origin
 REMOTE_REPO ?= $(shell git config --get remote.${REMOTE_NAME}.url)
 
 CURR_HEAD   := $(firstword $(shell git show-ref --hash HEAD | cut -b -6) master)
-GITHUB_PROJ := https://github.com//markdown-it/${NPM_PACKAGE}
+GITHUB_PROJ := https://github.com/hhhonzik/${NPM_PACKAGE}
 
 
 lint:
@@ -29,11 +29,11 @@ browserify:
 	# Browserify
 	( printf "/*! ${NPM_PACKAGE} ${NPM_VERSION} ${GITHUB_PROJ} @license MIT */" ; \
 		./node_modules/.bin/browserify ./ -s markdownitIns \
-		) > dist/markdown-it-ins.js
+		) > dist/markdown-it-relativelink.js
 	# Minify
-	./node_modules/.bin/uglifyjs dist/markdown-it-ins.js -b beautify=false,ascii-only=true -c -m \
+	./node_modules/.bin/uglifyjs dist/markdown-it-relativelink.js -b beautify=false,ascii-only=true -c -m \
 		--preamble "/*! ${NPM_PACKAGE} ${NPM_VERSION} ${GITHUB_PROJ} @license MIT */" \
-		> dist/markdown-it-ins.min.js
+		> dist/markdown-it-relativelink.min.js
 
 .PHONY: lint test coverage
 .SILENT: lint test
