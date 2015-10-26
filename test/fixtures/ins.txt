@@ -9,3 +9,22 @@
 .
 <p><a href="http://myprefix.com/Space-link">Space link</a></p>
 .
+
+.
+[[can be found here|native-adverts]]
+.
+<p><a href="http://myprefix.com/native-adverts">can be found here</a></p>
+.
+
+
+.
+[[can be found here|native-adverts#headline-1]]
+.
+<p><a href="http://myprefix.com/native-adverts#headline-1">can be found here</a></p>
+.
+
+.
+[[Quickstart#headline-1]]
+.
+<p><a href="http://myprefix.com/Quickstart#headline-1">Quickstart</a></p>
+.
