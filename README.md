@@ -1,8 +1,8 @@
-# markdown-it-ins
+# markdown-it-relativelink
 
 __v1.+ requires `markdown-it` v4.+, see changelog.__
 
-`[[relative link]]` => `<a href="http://myprefix/relative-link">relative link</ins>`
+`[[relative link]]` => `<a href="http://myprefix/relative-link">relative link</a>`
 
 
 
