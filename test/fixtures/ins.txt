@@ -28,3 +28,9 @@
 .
 <p><a href="http://myprefix.com/Quickstart#headline-1">Quickstart</a></p>
 .
+
+.
+[[C++ Library]]
+.
+<p><a href="http://myprefix.com/C++-Library">C++ Library</a></p>
+.

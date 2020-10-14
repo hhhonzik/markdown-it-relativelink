@@ -6,7 +6,7 @@ var generate = require('markdown-it-testgen');
 
 /*eslint-env mocha*/
 
-describe('markdown-it-ins', function () {
+describe('markdown-it-relativelink', function () {
   var md = require('markdown-it')()
               .use(require('../')({
                 prefix: 'http://myprefix.com/'

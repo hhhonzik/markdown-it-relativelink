@@ -6,7 +6,7 @@ var plugin = require('markdown-it-regexp');
 module.exports = function (opts) {
   return plugin(
     // regexp to match
-    /\[\[([\|\-\#a-zA-Z0-9_ ]+)\]\]/,
+    /\[\[([\|\-+\#a-zA-Z0-9_ ]+)\]\]/,
 
     // this function will be called when something matches
     function(match, utils) {
