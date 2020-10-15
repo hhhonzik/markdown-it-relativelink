@@ -1,4 +1,5 @@
 'use strict';
+
 /*!
  * markdown-it-regexp
  * Copyright (c) 2014 Alex Kocharin
