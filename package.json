@@ -33,7 +33,5 @@
     "request": "*",
     "uglify-js": "*"
   },
-  "dependencies": {
-    "markdown-it-regexp": "^0.4.0"
-  }
+  "dependencies": {}
 }

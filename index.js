@@ -1,13 +1,13 @@
 'use strict';
 
-var plugin = require('markdown-it-regexp');
-
+var plugin = require('./plugin');
 
 module.exports = function (opts) {
   return plugin(
     // regexp to match
     // /\[\[([\|\-+\#a-zA-Z0-9_ 一-龠ぁ-ゔァ-ヴー]+)\]\]/,
-    /\[\[([\|\-+\#a-zA-Z0-9_ 一-龠가-힣ぁ-ゔァ-ヴー]+)\]\]/,
+    new RegExp('\\[\\[([\\|+0-9_# \\p{L}-]+)\\]\\]', 'giu'),
+    // new RegExp('\[\[([\|+_ \p{L}#\p{N}-]+)\]\]', 'giu'),
 
     // this function will be called when something matches
     function(match, utils) {
