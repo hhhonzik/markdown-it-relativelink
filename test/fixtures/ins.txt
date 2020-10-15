@@ -24,6 +24,12 @@
 .
 
 .
+Find [[Something]] [[here|native-adverts#headline-1]]
+.
+<p>Find <a href="http://myprefix.com/Something">Something</a> <a href="http://myprefix.com/native-adverts#headline-1">here</a></p>
+.
+
+.
 [[Quickstart#headline-1]]
 .
 <p><a href="http://myprefix.com/Quickstart#headline-1">Quickstart</a></p>
@@ -33,4 +39,17 @@
 [[C++ Library]]
 .
 <p><a href="http://myprefix.com/C++-Library">C++ Library</a></p>
+.
+
+.
+[[快速入门|Quickstart]]
+.
+<p><a href="http://myprefix.com/Quickstart">快速入门</a></p>
+.
+
+
+.
+[[ユーザープライバシー|User Privacy]]
+.
+<p><a href="http://myprefix.com/User-Privacy">ユーザープライバシー</a></p>
 .
